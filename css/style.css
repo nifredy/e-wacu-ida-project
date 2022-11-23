@@ -508,6 +508,9 @@ li.move-right {
   font-style: italic;
   text-align: center;
 }
+.tour-title span{
+  font-size: 13px;
+}
 
 .herbs-container1 {
   display: flex;
@@ -1268,6 +1271,9 @@ iframe{
   width: 85%;
   font-size: 13px;
   line-height: 1.5em;
+}
+.tour-title span{
+  font-size: 10px;
 }
 iframe{
   width: 340px;
