@@ -45,7 +45,17 @@ header {
   margin: 0 auto;
   overflow: hidden;
   padding: 0 1rem;
-
+}
+.herbs-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12, 3, 51, 0.5), rgba(12, 3, 51, 0.3)),url(../img/herbs.jpg);
+  background-size: cover;
+  /* max-width: 117rem; */
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 1rem;
 }
 nav {
   /* position: absolute; */
@@ -471,6 +481,163 @@ li.move-right {
   cursor: pointer;
 }
 
+/* =========================HERBEL LEAVES==========================*/
+
+
+#herbs {
+  margin-top: 69.5rem;
+  padding-top: 5em;
+  background: linear-gradient(
+      rgb(250, 250, 250, 0.97),
+      rgba(250, 250, 250, 0.97)
+    ),
+    url(../img/bg1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  transition: 0.5s;
+}
+.tour-title {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  margin-top: 2em;
+  line-height: 27px;
+  font-family: "Times New Roman";
+  font-weight: 100;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+.herbs-container1 {
+  display: flex;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-bottom: 1px solid #05441c;
+  transition: 0.5s ease-in-out;
+}
+.herbs-container1 span{
+ font-size: 16px;
+ text-transform: uppercase;
+ font-family: 'roboto';
+}
+.herbs-container1 p {
+  font-family: "poppins";
+  font-size: 14px;
+  margin-left: 1em;
+  margin-right: 3em;
+}
+.herbs-container1 .imgbox {
+  display: block;
+  margin-right: 6em;
+  margin-left: 2em;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  width: 100vw;
+  height: 42vh;
+  transform: scale(1);
+  overflow: hidden;
+}
+.herbs-container1 .imgbox img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 3s ease-out;
+}
+.imgbox:hover img {
+  transform: scale(1.2);
+}
+p .book {
+  position: relative;
+  margin: 0;
+  line-height: 5em;
+  text-decoration: none;
+  text-transform: capitalize;
+  border-radius: 30px;
+  border: 1px solid #021b0b;
+  background: transparent;
+  padding: 5px 20px 5px 20px;
+  color: #021b0b;
+  font-family: "Poppins";
+  overflow: hidden;
+  z-index: 0;
+}
+.book span {
+  position: absolute;
+  background: #021b0b;
+  width: 0%;
+  height: 100%;
+  border-radius: 30px;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+.book:hover span {
+  width: 100%;
+}
+.book:hover {
+  color: #eee;
+}
+.mfp-hide{
+  display: none !important;
+  /* max-width: 75%;
+  margin: 0 auto; */
+}
+
+iframe{
+  margin-left: 250px;
+}
+.mfp-close{
+  
+  width: 22px;
+  height: 22px;
+  border-radius: 50px;
+  line-height: 22px;
+  position: absolute;
+  right: 40px;
+}
+
+/* .events-container2 {
+  display: flex;
+  background: #2a3d0036;
+  background-position-x: 10vw;
+  max-width: 90%;
+  margin: 0 auto;
+  padding-top: 2em;
+  border-bottom: 1px solid #886800;
+  transition: 0.5s ease-in-out;
+}
+.events-container2 p {
+  font-family: "poppins";
+  margin-right: 3em;
+  margin-left: 2em;
+}
+.events-container2 .imgbox {
+  order: 2;
+  display: block;
+  margin-right: 4em;
+  margin-left: 2em;
+  margin-bottom: 1.5em;
+  border-radius: 5px;
+  width: 100vw;
+  height: 42vh;
+  transform: scale(1);
+  overflow: hidden;
+}
+.events-container2 .imgbox img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+
+  cursor: pointer;
+  transition: 3s ease-out;
+} */
+
 /* =========================CONTACTTTTTT==========================*/
 .section-title {
   font-size: 30px;
@@ -501,6 +668,12 @@ li.move-right {
   margin-top: -1em;
 }
 .contact-section {
+  background: #011107d3;
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+}
+.herbs-contact-section {
+ 
   background: #011107d3;
   border-bottom-right-radius: 60px;
   border-bottom-left-radius: 60px;
@@ -665,6 +838,22 @@ li.move-right {
   .center h1{
     font-size: 3.2rem;
   }
+  .herbs-container1 {
+    justify-content: center;
+    align-items: center;
+  }
+  .herbs-container1 p {
+    font-size: 20px;
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .herbs-container1 .imgbox {
+    width: 80%;
+    height: 25vh;
+    width: 150vw;
+    margin: 0 auto;
+  }
 }
 
 
@@ -702,6 +891,12 @@ li.move-right {
       .sec3-inner .img {
         margin-right: -120px;
       }
+      #herbs{
+        margin-top: 136.5rem;
+      }
+      iframe{
+        margin-left: 80px;
+      }
 }
 @media screen and (max-width: 978px){
     .sec2-inner .text {
@@ -712,6 +907,30 @@ li.move-right {
       }
       .sec3-inner .img {
         margin-right: -100px;
+      }
+
+      .tour-title {
+        width: 60%;
+        font-size: 20px;
+      }
+
+      .herbs-container1 {
+        width: 95%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .herbs-container1 p {
+        text-align: center;
+        font-size: 16px;
+        margin-top: 2em;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+      .herbs-container1 .imgbox {
+        width: 98%;
+        height: 30vh;
+        margin: 0 auto;
       }
       .contact-container {
         width: 85%;
@@ -763,10 +982,6 @@ li.move-right {
         text-align: left;
         margin-left: 0.2em;
       }
-
-
-
-
       .sec3 {
         padding-bottom: 35em;
       }
@@ -815,6 +1030,34 @@ li.move-right {
       .team-content{
         grid-template-columns: repeat(2,1fr);
       }
+
+      #herbs{
+        margin-top: 102.5rem;
+      }
+
+      .tour-title {
+        width: 80%;
+        font-size: 17px;
+      }
+
+      .book span {
+        display: none;
+      }
+      p .book {
+        background: #2a3d00;
+        color: #eee;
+      }
+      .herbs-container1 p {
+        text-align: justify;
+      }
+      
+
+      iframe{
+        margin-left: 5px;
+        width: 747px;
+      }
+      
+
       .contact-section {
         border-bottom-right-radius: 30px;
         border-bottom-left-radius: 30px;
@@ -884,6 +1127,13 @@ li.move-right {
         margin: 0 auto;
       }
 }
+@media screen and (max-width:600px){
+  iframe{
+    margin-left: 10px;
+    width: 570px;
+    height: 400px;
+  }
+}
 @media screen and (max-width:540px){
     .banner-words h1{
         font-size: 6rem;
@@ -902,11 +1152,22 @@ li.move-right {
     margin-top: 25em;
     margin-bottom: -18em;
   }
-  
+  #herbs{
+    margin-top: 72.1rem;
+  }
+  .herbs-contact-section{
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+  }
+  iframe{
+    margin-left: 5px;
+    width: 520px;
+    height: 300px;
+  }
 
     
 }
-@media screen and (max-width: 412px){
+@media screen and (max-width: 414px){
     .sec2 p {
         font-size: 16px;
       }
@@ -925,7 +1186,15 @@ li.move-right {
       .team-content{
         grid-template-columns: auto;
       }
+      .explore{
+        font-size: 15px;
+      }
+      iframe{
+        width: 390px;
+        height: 240px;
+      }
 }
+
 @media screen and (max-width:375px){
     .banner-words h1{
         font-size: 5rem;
@@ -953,6 +1222,33 @@ li.move-right {
         margin-top: 15em;
         margin-bottom: -15em;
       }
+      #herbs{
+        margin-top: 78.1rem;
+      }
+      p .book {
+        font-size: 13px;
+      }
+      .herbs-container1 p {
+        text-align: justify;
+        font-size: 13px;
+        margin-top: 2em;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+      .herbs-container1 .imgbox {
+        width: 98%;
+      }
+      iframe{
+        width: 355px;
+        height: 220px;
+      }
+}
+@media screen and (max-width:375px) and (max-height:667px){
+
+  #herbs{
+    margin-top: 62.1rem;
+  }
+
 }
 
 @media screen and (max-width:360px){
@@ -968,6 +1264,33 @@ li.move-right {
 .contact-form {
   margin-left: 1em;
 }
+.tour-title {
+  width: 85%;
+  font-size: 13px;
+  line-height: 1.5em;
+}
+iframe{
+  width: 340px;
+  height: 220px;
+}
+
+}
+
+@media screen and (max-width: 320px){
+  #herbs{
+    margin-top: 55.1rem;
+  }
+  iframe{
+    width: 300px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 300px){
+  iframe{
+    margin-left: 2px;
+    width: 265px;
+    height: 180px;
+  }
 }
 
 @media screen and (max-width: 850px) {

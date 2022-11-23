@@ -18,10 +18,30 @@ function scrollUp() {
   
   // background header sticky
   
-  function scrollHeader() {
-    const nav = document.getElementById("header");
+  // function scrollHeader() {
+  //   const nav = document.getElementById("header");
   
-    if (this.scrollY >= 5) nav.classList.add("sticky");
-    else nav.classList.remove("sticky");
-  }
-  window.addEventListener("scroll", scrollHeader);
+  //   if (this.scrollY >= 5) nav.classList.add("sticky");
+  //   else nav.classList.remove("sticky");
+  // }
+  // window.addEventListener("scroll", scrollHeader);
+
+
+  ///////////////////// POP-UP VIDEO///////////////////
+
+  $('#videolink').magnificPopup({
+    type:'inline',
+    midClick:true
+  });
+  $('#videolink2').magnificPopup({
+    type:'inline',
+    midClick:true
+  });
+  $('#videolink3').magnificPopup({
+    type:'inline',
+    midClick:true
+  });
+  $('#videolink4').magnificPopup({
+    type:'inline',
+    midClick:true
+  });
