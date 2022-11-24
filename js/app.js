@@ -1,5 +1,11 @@
 const selectElement = (element) => document.querySelector(element);
 
+
+
+
+
+
+
 //open and close nav onclick
 
 selectElement(element='.menu-icons').addEventListener('click', () => {
@@ -45,3 +51,5 @@ function scrollUp() {
     type:'inline',
     midClick:true
   });
+
+  
